@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Exemplo de Página HTML</title>
+    <!-- <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #f4f4f9;
+        }
+        h1 {
+            color: #333;
+        }
+        section {
+            background-color: #fff;
+            border-radius: 8px;
+            padding: 20px;
+            margin-bottom: 20px;
+        }
+        footer {
+            text-align: center;
+            font-size: 14px;
+            color: #777;
+            margin-top: 40px;
+        }
+    </style>
+-->
+</head>
+<body>
+    <header>
+        <h1>Exemplo de Página HTML - Tags Semânticas e Formulários</h1>
+    </header>
+
+    <section>
+        <h2>Tags Semânticas no HTML</h2>
+        <p>As tags semânticas são importantes para a estrutura e acessibilidade de uma página web. Elas fornecem informações sobre o conteúdo da página, tornando o código mais legível e compreensível.</p>
+
+        <ul>
+            <li><strong>&lt;header&gt;</strong> - Usada para definir o cabeçalho da página ou de uma seção.</li>
+            <li><strong>&lt;footer&gt;</strong> - Define o rodapé da página ou de uma seção.</li>
+            <li><strong>&lt;article&gt;</strong> - Representa um conteúdo independente que pode ser distribuído ou reutilizado.</li>
+            <li><strong>&lt;section&gt;</strong> - Define uma seção dentro do conteúdo, geralmente com um título.</li>
+            <li><strong>&lt;nav&gt;</strong> - Usada para agrupar links de navegação.</li>
+            <li><strong>&lt;main&gt;</strong> - Representa o conteúdo principal da página.</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>Exemplo de Formulário em HTML</h2>
+        <form action="/submit-form" method="POST">
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" required><br><br>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required><br><br>
+
+            <label for="mensagem">Mensagem:</label><br>
+            <textarea id="mensagem" name="mensagem" rows="4" cols="50" required></textarea><br><br>
+
+            <label for="genero">Gênero:</label><br>
+            <input type="radio" id="masculino" name="genero" value="masculino">
+            <label for="masculino">Masculino</label><br>
+            <input type="radio" id="feminino" name="genero" value="feminino">
+            <label for="feminino">Feminino</label><br><br>
+
+            <label for="linguas">Línguas faladas:</label><br>
+            <input type="checkbox" id="portugues" name="linguas" value="portugues">
+            <label for="portugues">Português</label><br>
+            <input type="checkbox" id="ingles" name="linguas" value="ingles">
+            <label for="ingles">Inglês</label><br>
+            <input type="checkbox" id="espanhol" name="linguas" value="espanhol">
+            <label for="espanhol">Espanhol</label><br><br>
+
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
+
+    <section>
+        <h2>Outras Tags Úteis</h2>
+        <p>Além das tags semânticas e de formulários, o HTML oferece muitas outras tags úteis, como:</p>
+
+        <ul>
+            <li><strong>&lt;img&gt;</strong> - Usada para inserir imagens.</li>
+            <li><strong>&lt;a&gt;</strong> - Define um link para navegar entre páginas ou recursos.</li>
+            <li><strong>&lt;ul&gt;</strong> - Define uma lista não ordenada.</li>
+            <li><strong>&lt;ol&gt;</strong> - Define uma lista ordenada.</li>
+            <li><strong>&lt;table&gt;</strong> - Usada para criar tabelas.</li>
+            <li><strong>&lt;video&gt;</strong> - Para embutir vídeos em uma página.</li>
+            <li><strong>&lt;audio&gt;</strong> - Para embutir conteúdo de áudio.</li>
+        </ul>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Exemplo de Página HTML - Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>
