@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Exemplo de Página HTML</title>
+</head>
+
+<body>
+    <header id="#inicio">
+        <nav>
+            <a href="#outras-tags">Algumas Tags</a> |
+            <a href="#tabela">Tabelas</a> |
+            <a href="#listas">Listas</a> |
+            <a href="#"></a>
+        </nav>
+        <h1>Exemplo de Página HTML - Tags Semânticas e Formulários</h1>
+    </header>
+    <main>
+        <section>
+            <h2>Tags Semânticas no HTML</h2>
+            <p>As tags semânticas são importantes para a estrutura e acessibilidade de uma página web. Elas fornecem
+                informações sobre o conteúdo da página, tornando o código mais legível e compreensível.</p>
+
+            <ul>
+                <li><strong>&lt;header&gt;</strong> - Usada para definir o cabeçalho da página ou de uma seção.</li>
+                <li><strong>&lt;footer&gt;</strong> - Define o rodapé da página ou de uma seção.</li>
+                <li><strong>&lt;article&gt;</strong> - Representa um conteúdo independente que pode ser distribuído ou
+                    reutilizado.</li>
+                <li><strong>&lt;section&gt;</strong> - Define uma seção dentro do conteúdo, geralmente com um título.
+                </li>
+                <li><strong>&lt;nav&gt;</strong> - Usada para agrupar links de navegação.</li>
+                <li><strong>&lt;main&gt;</strong> - Representa o conteúdo principal da página.</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Exemplo de Formulário em HTML</h2>
+            <form action="/submit-form" method="POST">
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome" required><br><br>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required><br><br>
+
+                <label for="mensagem">Mensagem:</label><br>
+                <textarea id="mensagem" name="mensagem" rows="4" cols="50" required></textarea><br><br>
+
+                <label for="genero">Gênero:</label><br>
+                <input type="radio" id="masculino" name="genero" value="masculino">
+                <label for="masculino">Masculino</label><br>
+                <input type="radio" id="feminino" name="genero" value="feminino">
+                <label for="feminino">Feminino</label><br><br>
+
+                <label for="linguas">Línguas faladas:</label><br>
+                <input type="checkbox" id="portugues" name="linguas" value="portugues">
+                <label for="portugues">Português</label><br>
+                <input type="checkbox" id="ingles" name="linguas" value="ingles">
+                <label for="ingles">Inglês</label><br>
+                <input type="checkbox" id="espanhol" name="linguas" value="espanhol">
+                <label for="espanhol">Espanhol</label><br><br>
+
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+        <hr>
+        <section>
+            <h2 id="outras-tags">Outras Tags Úteis</h2>
+            <p>Além das tags semânticas e de formulários, o HTML oferece muitas outras tags úteis, como:</p>
+
+            <ul>
+                <li><strong>&lt;img&gt;</strong> - Usada para inserir imagens.</li>
+                <li><strong>&lt;a&gt;</strong> - Define um link para navegar entre páginas ou recursos.</li>
+                <li><strong>&lt;table&gt;</strong> - Usada para criar tabelas.</li>
+                <li><strong>&lt;video&gt;</strong> - Para embutir vídeos em uma página.</li>
+                <li><strong>&lt;audio&gt;</strong> - Para embutir conteúdo de áudio.</li>
+            </ul>
+        </section>
+        <hr>
+        <div id="tabela">
+            <div id="start-tabela">
+                <h2>Tabelas</h2>
+                <h3>As tags &lt;tr&gt; e &lt;td&gt; são usadas em HTML para criar tabelas.</h3>
+
+                <h4><strong>&lt;tr&gt;</strong> – Table Row (linha da tabela)</h4>
+                <p>Representa uma linha dentro de uma tabela.</p>
+                <p>Fica dentro da tag &lt;table&gt; e geralmente envolve uma ou mais &lt;td&gt; ou &lt;th&gt;(células).
+                </p>
+
+                <p><strong>&lt;td&gt;</strong> – Table Data (dado da tabela) <br><br>
+                    Representa uma célula de dado dentro de uma linha. <br>
+                    Deve estar sempre dentro de uma &lt;tr&gt;.</p>
+            </div>
+            <div id="exemplo-codigo-tabela">
+                <h2>Exemplo de Código</h2>
+                &lt;table&gt; <br>
+                &lt;tr&gt; <br>
+                &lt;td&gt;Nome&lt;/td&gt; <br>
+                &lt;td&gt;Idade&lt;/td&gt; <br>
+                &lt;/tr&gt; <br>
+                &lt;tr&gt; <br>
+                &lt;td&gt;João&lt;/td&gt; <br>
+                &lt;td&gt;25&lt;/td&gt; <br>
+                &lt;/tr&gt; <br>
+                &lt;/table&gt;
+            </div>
+            <hr>
+        </div>
+
+        <div id="listas">
+            <div id="start-lista">
+                <h2>Listas</h2>
+                <h3>As tags &lt;ol&gt; e &lt;ul&gt; são usadas em HTML para criar listas.</h3>
+                <h4>&lt;ol&gt; – Ordered List (lista ordenada)</h4>
+                <p>
+                    Cria uma lista numerada (com ordem). <br>
+                    Os itens aparecem com números (1, 2, 3...) por padrão. <br>
+                </p>
+            </div>
+            <div id="exemplo-lista-ordenadas">
+                <p>Exemplo:</p>
+                &lt;ol&gt; <br>
+                &lt;li&gt;Primeiro item&lt;/li&gt; <br>
+                &lt;li&gt;Segundo item&lt;/li&gt; <br>
+                &lt;li&gt;Terceiro item&lt;/li&gt; <br>
+                &lt;/ol&gt; <br>
+            </div>
+            <div id="resultado-lista-ordenadas">
+                <p><strong>Resultado:</strong></p>
+                <ol>
+                    <li>Primeiro item</li>
+                    <li>Segundo item</li>
+                    <li>Terceiro item</li>
+                </ol>
+            </div>
+            <div>
+                <h3>&lt;ul&gt; – Unordered List (lista não ordenada)</h3>
+                <p>Cria uma lista não numerada. </p>
+                <p> Os itens aparecem com marcadores (bolinhas) por padrão.</p>
+            </div>
+            <div id="exemplo-lista-nao-ordenadas">
+                <p>Exemplo:</p>
+                &lt;ul&gt; <br>
+                &lt;li&gt;Maça&lt;/li&gt; <br>
+                &lt;li&gt;Banana&lt;/li&gt; <br>
+                &lt;li&gt;Laranja&lt;/li&gt; <br>
+                &lt;/ul&gt; <br>
+            </div>
+            <div id="resultado-lista-nao-ordenadas">
+                <p><strong>Resultado:</strong></p>
+                <ul>
+                    <li>Maça</li>
+                    <li>Banana</li>
+                    <li>Laranja</li>
+                </ul>
+            </div>
+
+            <button onclick="window.scrollTo({ top: 0, behavior: 'smooth' })">
+                Voltar ao topo
+            </button>
+        </div>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Exemplo de Página HTML - Todos os direitos reservados.</p>
+    </footer>
+</body>
+
+</html>
